@@ -1,0 +1,106 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AVENGERS Appointment Form</title>
+    <style>
+        body{
+            background-image:URL(BG_pic.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+            
+            height: auto;
+            
+        }
+        #head1{
+          
+           text-align: center;
+           
+           background:transparent;
+         border: 2px solid rgba(255, 255, 255, 0.5);
+         border-radius: 20px;
+         backdrop-filter: blur(5px);
+           color: white;
+           height: 100px;
+           padding-top: 2px;
+           padding-bottom: 5px;
+           margin-top: 50px;
+           margin-bottom: 10px;
+           border-radius: 20px;
+        }
+        #com{
+          
+         width: 400px;
+         height: 750px;
+         text-align: center;
+         margin: 80px auto;
+         background: white;
+         margin-bottom: auto;
+         border-radius: 25px;
+         color: white;
+         background:transparent;
+         border: 2px solid rgb(255,255,255,0.5);
+         border-radius: 20px;
+         backdrop-filter: blur(5px);
+        }
+      
+    </style>
+</head>
+
+<body> 
+    <nav id=head1>
+     <h1 > MARVEL</h1>
+
+<h2 >Avengers Appointment Form</h2>
+</nav>
+
+<div id=com>
+<form action="/submit-appointment" method="post">
+   
+    <br>
+    <label for="Enter the name">Enter the name</label><br>
+
+    <input type="text" placeholder="Enter the name" ><br><br>
+    
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob" required><br><br>
+    
+    <label for="gender">Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" required><br><br>
+    
+    <label for="dept">Department:</label><br>
+    <select id="dept" name="dept">
+        <option value="general">General Medicine</option>
+        <option value="cardiology">Cardiology</option>
+        <option value="neurology">Neurology</option>
+        <option value="orthopedics">Orthopedics</option>
+    </select><br><br>
+    
+    <label for="date">Preferred Appointment Date:</label><br>
+    <input type="date" id="date" name="date" required><br><br>
+    
+    <label for="time">Preferred Appointment Time:</label><br>
+    <input type="time" id="time" name="time" required><br><br>
+    
+    <label for="notes">Additional Notes:</label><br>
+    <textarea id="notes" name="notes" rows="4" cols="50"></textarea><br><br>
+    
+    <input type="submit" value="Submit">
+    <br>
+    <br>
+</form>
+</div>
+</body>
+</html>

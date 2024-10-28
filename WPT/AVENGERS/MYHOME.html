@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      * {
+         font-family: 'Segoe UI Light';
+      }
+      body{
+         margin:0;
+         background-image:url(BG_AVN.jpg);
+         background-size: cover;
+      }
+
+      nav {
+         width: 100%;
+         height: 100px;
+         box-shadow: 0px 10px 20px #eeeeee;
+         border: 2px solid rgba(255, 255, 255, 0.726);
+     background-color:transparent;
+     border-radius: 20px;
+     backdrop-filter: blur(40px);
+      }
+
+      #logo {
+         width: 80px;
+         height: 120px;
+      }
+
+      #nav-links {
+         position: absolute;
+         right: 40px;
+         top: 50px;
+         
+      }
+
+      #brand-name {
+         position: absolute;
+         top: 50px;
+         font-size: 20px;
+         font-weight: bold;
+      }
+
+      #nav-links a {
+         margin-right: 30px;
+         text-decoration: none;
+         font-size: 18px;
+         border-width: 1.5px;
+         border-color: #1976D2;
+         color:black;
+         border-style: solid;
+         font-weight: bold;
+         padding: 10px 20px;
+         border-radius: 25px;
+         transition: background 0.4s;
+      }
+
+      #nav-links a:hover {
+         background: #1976D2;
+         color: white;
+      }
+
+      #intro {
+         margin-top: 100px;
+         padding: 10px 30px;
+         text-align: center;
+         color: white;
+         
+         background-color:transparent;
+     border-radius: 10px;
+     backdrop-filter: blur(40px);
+      }
+
+      #intro #description {
+         text-align: justify;
+         background-color:transparent;
+         font-weight: bold;
+     border-radius: 10px;
+     backdrop-filter: blur(50px);
+     
+         
+      }
+
+      #section-1 button {
+         border-width: 1.5px;
+         border-color: #1976D2;
+         color: #1976D2;
+         background: white;
+         
+         padding: 10px 20px;
+         border-radius: 25px;
+         transition: background 0.4s;
+      }
+      #section-2 button {
+         border-width: 1.5px;
+         border-color: #1976D2;
+         color: #1976D2;
+         background: white;
+         padding: 10px 20px;
+         border-radius: 25px;
+         transition: background 0.4s;
+      }
+      #section-3 button {
+         border-width: 1.5px;
+         border-color: #1976D2;
+         color: #1976D2;
+         background: white;
+         padding: 10px 20px;
+         border-radius: 25px;
+         transition: background 0.4s;
+      }
+      #section-4 button {
+         border-width: 1.5px;
+         border-color: #1976D2;
+         color: #1976D2;
+         background: white;
+         padding: 10px 20px;
+         border-radius: 25px;
+         transition: background 0.4s;
+      }
+      #section-5 button {
+         border-width: 1.5px;
+         border-color: #1976D2;
+         color: #1976D2;
+         background: white;
+         padding: 10px 20px;
+         border-radius: 25px;
+         transition: background 0.4s;
+      }
+      #section-6 button {
+         border-width: 1.5px;
+         border-color: #1976D2;
+         color: #1976D2;
+         background: white;
+         padding: 10px 20px;
+         border-radius: 25px;
+         transition: background 0.4s;
+      }
+      #intro button:hover {
+         background: #1976D2;
+         color: white;
+      }
+
+      #row-container {
+         width: 100%;
+         height: 450px;
+         margin-top: 20px;
+         text-align: center;
+      }
+
+      #section-1 {
+         width: 33%;
+         color: white;
+         
+         background-image: url(IRON.png);
+         background-size:cover;
+         height: inherit;
+         display: inline-block;
+         padding-top: 20px;
+         background-color:transparent;
+         font-weight: bold;
+     border-radius: 10px;
+     backdrop-filter: blur(20px);
+     opacity: 0; /* Start transparent */
+    transform: translateY(-20px) scale(0.9); /* Start smaller and slightly above */
+    animation: fadeInScaleUp 6s ease forwards; /* Apply animation */
+      }
+
+      #section-2 {
+         width: 33%;
+         color: white;
+         background-image: url(CAP.jpg);
+         background-size:cover;
+         height: inherit;
+         display: inline-block;
+         padding-top: 20px;
+         background-color:transparent;
+         font-weight: bold;
+     border-radius: 10px;
+     backdrop-filter: blur(20px);
+     opacity: 0; /* Start transparent */
+    transform: translateY(-20px) scale(0.9); /* Start smaller and slightly above */
+    animation: fadeInScaleUp 6s ease forwards; /* Apply animation */
+      }
+      #section-3 {
+         width: 33%;
+         color: white;
+         background-image: url(HULK.jpg);
+         background-size:cover;
+         height: inherit;
+         display: inline-block;
+         padding-top: 20px;
+         background-color:transparent;
+         font-weight: bold;
+     border-radius: 10px;
+     backdrop-filter: blur(20px);
+     opacity: 0; /* Start transparent */
+    transform: translateY(-20px) scale(0.9); /* Start smaller and slightly above */
+    animation: fadeInScaleUp 6s ease forwards; /* Apply animation */
+      }
+      
+      #section-4 {
+         margin-top: 10px;
+         width: 33%;
+         color: white;
+         background-image: url(widow.jpg);
+         background-size:cover;
+         height: inherit;
+         display: inline-block;
+         padding-top: 20px;
+         background-color:transparent;
+         font-weight: bold;
+     border-radius: 10px;
+     backdrop-filter: blur(20px);
+     opacity: 0; /* Start transparent */
+    transform: translateY(-20px) scale(0.9); /* Start smaller and slightly above */
+    animation: fadeInScaleUp 6s ease forwards; /* Apply animation */
+      }
+     
+
+
+
+      #section-5 {
+         width: 33%;
+         color: white;
+         background-image: url(THOR.jpg);
+         background-size:cover;
+         height: inherit;
+         display: inline-block;
+         padding-top: 20px;
+         background-color:transparent;
+         font-weight: bold;
+     border-radius: 10px;
+     backdrop-filter: blur(20px);
+     opacity: 0; /* Start transparent */
+    transform: translateY(-20px) scale(0.9); /* Start smaller and slightly above */
+    animation: fadeInScaleUp 6s ease forwards; /* Apply animation */
+      }
+      #section-6 {
+         width: 33%;
+         color: white;
+         background-image: url(HAY.jpg);
+         background-size:cover;
+         height: inherit;
+         display: inline-block;
+         padding-top: 20px;
+         background-color:transparent;
+         font-weight: bold;
+     border-radius: 10px;
+     backdrop-filter: blur(20px);
+     opacity: 0; /* Start transparent */
+    transform: translateY(-20px) scale(0.9); /* Start smaller and slightly above */
+    animation: fadeInScaleUp 6s ease forwards; /* Apply animation */
+      }
+      @keyframes fadeInScaleUp {
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1); /* Ends at full opacity, size, and original position */
+    }
+}
+   </style>
+</head>
+
+<body>
+   <nav>
+      <img src="logo.png" id="logo">
+      <span id="brand-name">AVENGERS</span>
+      <div id="nav-links">
+         <a href="MYHOME.html">Home</a>
+         <a href="APPOINTMENT.html">Appoinment</a>
+         <a href="contact_A.html">Contact Us</a>
+         <a href="#">Gallery</a>
+         <a href="#">Blogs</a>
+      </div>
+   </nav>
+   <div id="intro">
+      <h2>Welcome to the Avengers Help Line!</h2>
+      <div id="description">
+         <p>Need a Hulk to move your sofa? <br>Thor to bring some thunder to your BBQ? Or maybe you just need tech support from Iron Man (just... don't ask him to fix Windows)? You've come to the right place!
+
+            Browse through our Mightiest Agents below, each ready to assist with unique, superpowered services:
+            <br><br>
+            Iron Man: Tech issues? DIY rocket armor questions? He's your guy (as long as he's not at his 4 p.m. martini).
+            <br>Captain America: Looking for advice on how to be morally upright? Or need someone to open a tough pickle jar?
+            <br>Thor: Weather forecast a little too sunny? He'll summon some rain for your garden. Or smash stuff, if that's more your speed.
+            <br> Hulk: Furniture not quite “minimalist” enough? Hulk can help with that. (Just have a backup chair handy.)
+            <br>Black Widow: Need a master spy to blend in and uncover those deep, dark secrets? She’s also pretty great at fixing minor tech glitches.
+            <br>Hawkeye: Perfect for those tough-to-reach light bulbs and high-precision darts tournaments.
+            Call now! An Avenger is (probably) standing by—unless the world needs saving... again.</p>
+      </div>
+
+   </div>
+   <div id="row-container">
+      <div id="section-1">
+        
+         <h3>IRON MAN</h3>
+         <p>Specialty: High-tech solutions, sarcasm, and complex gadgetry
+            “I am Iron Man.” (And yes, he’ll remind you frequently.)</p>
+         <button><a href="IROM_MAN.html">CONNECT</a></button>
+      </div>
+      <div id="section-2">
+         
+         <h3>CAPTAIN AMERICA</h3>
+         <p>Captain America (Steve Rogers)Specialty: Moral guidance, leadership, and superhuman agility “I can do this all day.” 
+            (But he won’t. He does need coffee.)</p>
+            <button><a href="CAP.html">CONNECT</a></button>
+      </div>
+      <div id="section-3">
+         
+         <h3>HULK</h3>
+         <p>Hulk (Bruce Banner)
+            Specialty: Moving heavy furniture, unintentional interior design, and raw power
+            Services:Catchphrase: “HULK SMASH!” (But he tries to keep </p>
+            <button><a href="CAP.html">CONNECT</a></button>
+      </div>
+      <div id="section-4">
+         
+         <h3>BLACK WIDOW</h3>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit minus est, placeat similique culpa,
+            accusamus deleniti in at optio provident v</p>
+            <button><a href="CAP.html">CONNECT</a></button>
+      </div>
+      <div id="section-5">
+         
+         <h3>THOR</h3>
+         <p>Thor Odinson
+            Specialty: Thunder summoning, hammer-wielding, and dramatic entrances
+            Services:Catchphrase: “Bring me Thanos!” (But he’ll accept cats that scratch sofas, too.) v</p>
+            <button><a href="CAP.html">CONNECT</a></button>
+      </div>
+      <div id="section-6">
+        
+         <h3>HAWKEYE</h3>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit minus est, placeat similique culpa,
+            accusamus deleniti in at optio provident v</p>
+            <button><a href="CAP.html">CONNECT</a></button>
+      </div>
+   </div>
+
+</body>
+
+</html>
