@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+          background-image: url('./dishcopy.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+         .navbar navbar-expand-lg navbar-light bg-light{
+             background: transparent;
+         }
+        .contact-container {
+            width: 100%;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(173, 63, 63, 0.1);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.6); /* Adding some opacity to ensure form is visible */
+            border: 2px solid rgba(255, 200, 255, 0.5);
+            backdrop-filter: blur(5px);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #4d4a4a;
+            opacity: 0.8;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: rgba(5, 95, 190, 0.932);
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: rgba(56, 146, 241, 0.8);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+     <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="images/logo.png" style="width: 80px; height: auto;">
+      <span style="font-size: 24px; margin-left: 10px; font-weight: bold;">FOODCODE </span>
+      <span style="font-size: 20px; margin-left: 340px; color:royalblue; font-weight: bold;">✆Order:223344 </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="listings.html">Restaurants</a></li>
+        <li class="nav-item"><a class="nav-link" href="order2.html">Order Now</a></li>
+        <li class="nav-item"><a class="nav-link" href="track.html">Track Order</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="signin.html">Sign In</a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="POST" class="contact-form">
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>

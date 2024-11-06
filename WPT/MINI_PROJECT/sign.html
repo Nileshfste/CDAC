@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Food Ordering - Sign Up</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
+
+  <style>
+    /* Custom CSS */
+    .carousel-item img {
+      width: 10%;
+      margin-left: 250px;
+      height: 350px;
+      object-fit: cover;
+    }  
+
+    body {
+          background-image: url('./dishcopy.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: honeydew;
+            
+        }
+    .navbar {
+      box-shadow: 0 4px 8px rgba(224, 42, 42, 0.548);
+    }
+    .gallery img,
+    .menu-list img,
+    .card-img-top {
+      width: 100%;
+      height: auto;
+      max-height: 300px;
+      object-fit: cover;
+    }
+    footer {
+      background: #f8f9fa;
+      padding: 20px 0;
+    }
+    .contact-info {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .container.mt-5 {
+      width: 90%;
+      max-width: 1200px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="images/logo.png" style="width: 80px; height: auto;">
+      <span style="font-size: 24px; margin-left: 10px; font-weight: bold;">FOODCODE</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="listings.html">Restaurants</a></li>
+        <li class="nav-item"><a class="nav-link" href="order2.html">Order Now</a></li>
+        <li class="nav-item"><a class="nav-link" href="track.html">Track Order</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        <li class="nav-item active"><a class="nav-link" href="#">Sign Up</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <h2>Sign Up</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="mobile">Mobile Number</label>
+        <input type="tel" class="form-control" id="mobile" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Address</label>
+        <textarea class="form-control" id="address" rows="3" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" required>
+    </div>
+    <div class="form-group">
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" class="form-control" id="confirm-password" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign Up</button>
+  </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

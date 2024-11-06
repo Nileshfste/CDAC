@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu List - FOODCODE</title>
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+      .card-img-top{
+                     height: 250px; width:auto;
+      }
+    body {
+      background-color: #f8f9fa;
+    }
+    .menu-item {
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .menu-item:hover {
+      transform: scale(1.05);
+    }
+    .footer {
+      background: #f8f9fa; 
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo.png" style="width: 80px; height: auto;">
+      <span style="font-size: 24px; margin-left: 10px; font-weight: bold;">FOODCODE</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="listings.html">Restaurants</a></li>
+        <li class="nav-item"><a class="nav-link" href="order.html">Order Now</a></li>
+        <li class="nav-item"><a class="nav-link" href="track.html">Track Order</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="signin.html">Sign In</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Menu List -->
+  <div class="container_mt">
+    <h2 class="text-center">Menu List</h2>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="card menu-item" onclick="location.href='order.html'">
+          <img src="images/Misal pav.jpg" class="card-img-top" alt="Dish 1">
+          <div class="card-body">
+            <h5 class="card-title">Misal pav</h5>
+            <p class="card-text">A delicious specialty made with fresh ingredients.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="card menu-item" onclick="location.href='order.html'">
+          <img src="images/menu/gellary/Indian assorted vegetarian food in plate and serving bowls.jpg" class="card-img-top" alt="Dish 2">
+          <div class="card-body">
+            <h5 class="card-title">vegetarian food</h5>
+            <p class="card-text">Enjoy our chef's choice with unique flavors.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="card menu-item" onclick="location.href='order.html'">
+          <img src="images/menu/gellary/The full meal Come and see our new website at….jpg" class="card-img-top" alt="Dish 3">
+          <div class="card-body">
+            <h5 class="card-title">Full Meal</h5>
+            <p class="card-text">A favorite among food lovers, perfect for any time.</p>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-4 col-sm-6 mb-4">
+        <div class="card menu-item" onclick="location.href='order.html'">
+          <img src="images/menu/gellary/HOW TO MAKE DELICIOUS NIGERIAN JOLLOF RICE _JENNIEIFY’SKITCHEN - YouTube.jpg" class="card-img-top" alt="Dish 4">
+          <div class="card-body">
+            <h5 class="card-title">NIGERIAN RICE</h5>
+            <p class="card-text">A classic combination that delights everyone.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="card menu-item" onclick="location.href='order.html'">
+          <img src="images/menu/gellary/dish-2.png" class="card-img-top" alt="Dish 3">
+          <div class="card-body">
+            <h5 class="card-title">Breat Dish</h5>
+            <p class="card-text">A favorite among food lovers, perfect for any time.</p>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="card menu-item" onclick="location.href='order.html'">
+        <img src="images/menu/gellary/𝘶𝘱𝘭𝘰𝘢𝘥𝘦𝘥 𝘣𝘺  𝒦𝓎𝓁𝒾𝒶𝒽🐝.jpg" class="card-img-top" alt="Dish 3">
+        <div class="card-body">
+          <h5 class="card-title">1PM Lunch</h5>
+          <p class="card-text">A favorite among food lovers, perfect for any time.</p>
+        </div>
+      </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer text-center mt-5">
+    <p>&copy; 2024 FOODCODE. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

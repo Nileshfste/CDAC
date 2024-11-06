@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Now | FoodHub</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .order-container { max-width: 600px; margin: auto; padding-top: 20px; }
+    .form-group { margin-bottom: 1.5em; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">FOODCODE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="listings.html">Restaurants</a></li>
+        <li class="nav-item"><a class="nav-link" href="order.html">Order Now</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Order Form -->
+  <div class="container order-container mt-5">
+    <h2 class="text-center">Place Your Order</h2>
+    <form id="orderForm">
+      <div class="form-group">
+        <label for="restaurant">Select Restaurant</label>
+        <select id="restaurant" class="form-control" required>
+          <option value="">Choose...</option>
+          <option value="MaxFodies - Italian">MaxFodies - Italian</option>
+          <option value="Chinese Center - Chinese">Chinese Center - Chinese</option>
+          <option value="Hotel JAY - Indian">Hotel JAY - Indian</option>
+          <option value="Hotel Marathi - Maharastian">Hotel Marathi - Maharastian</option>
+          <option value="HOTEL PRIDE -Non Veg">HOTEL PRIDE -Non Veg</option>
+          <option value="HOTEL SANAM TERI KASAM">HOTEL SANAM TERI KASAM</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="menu">Select Menu Item</label>A
+        <select id="menu" class="form-control" required>
+          <option value="">Choose...</option>
+          <option value="Pizza">Pizza</option>
+          <option value="Burger">Burger</option>
+          <option value="Sushi">Sushi</option>
+          <option value="Butter Chicken">Butter Chicken</option>
+          <option value="Chicken Salad">Chicken Salad</option>
+          <option value="Fried Rice & Manchurian">Fried Rice & Manchurian</option>
+          <option value="Sambal kerang">Sambal kerang</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" class="form-control" min="1" value="1" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="pickupTime">Pickup Time</label>
+        <input type="time" id="pickupTime" class="form-control" required>
+      </div>
+      
+      <button type="submit" class="btn btn-primary btn-block">Place Order</button>
+    </form>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+ 
+
+    // Handle order form submission
+    document.getElementById("orderForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      // Get input values
+      const restaurant = document.getElementById("restaurant").value;
+      const menu = document.getElementById("menu").value;
+      const quantity = document.getElementById("quantity").value;
+      const pickupTime = document.getElementById("pickupTime").value;
+
+      // Create an order object
+      const orderDetails = {
+        restaurant: restaurant,
+        menu: menu,
+        quantity: quantity,
+        pickupTime: pickupTime
+      };
+
+      // Save order details to localStorage
+      localStorage.setItem("orderDetails", JSON.stringify(orderDetails));
+
+      // Redirect to track page
+      window.location.href = "track.html";
+    });
+  </script>
+</body>
+</html>

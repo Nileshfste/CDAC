@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Listings</title>
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom styling */
+    .restaurant-card img { height: 150px; object-fit: cover; }
+    .filter-section { margin-top: 20px; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">FOODCODE</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="order2.html">Order Now</a></li>
+        <li class="nav-item"><a class="nav-link" href="track.html">Track Order</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="signin.html">Sign In</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Restaurant Listings Section -->
+  <div class="container mt-5">
+    <h2 class="mb-4">Local Restaurants</h2>
+
+    <!-- Filter Section -->
+    <div class="filter-section">
+      <label for="filterCuisine">Filter by Cuisine:</label>
+      <select id="filterCuisine" class="form-control w-50 mb-4">
+        <option value="all">All Cuisines</option>
+        <option value="maharastian">maharastian</option>
+        <option value="italian">Italian</option>
+        <option value="chinese">Chinese</option>
+        <option value="indian">Indian</option>
+        <option value="Non Veg">Non Veg</option>
+      </select>
+    </div>
+
+    <!-- Restaurant Cards -->
+    <div class="row" id="restaurantList">
+      <!-- Restaurant 1 -->
+      <div class="col-md-4 mb-4 restaurant-card" data-cuisine="italian">
+        <div class="card">
+          <img src="images/menu/viwemenu/3d9cc618-dbe9-4a35-99ef-cf729967337c.jpg" class="card-img-top" alt="Restaurant 1">
+          <div class="card-body">
+            <h5 class="card-title">MaxFodies - Italian</h5>
+            <p class="card-text">Enjoy authentic Italian dishes, from pasta to pizza.</p>
+            <a href="menu.html" class="btn btn-primary">View Menu</a>
+          </div>
+        </div>
+      </div>
+      <!-- Restaurant 2 -->
+      <div class="col-md-4 mb-4 restaurant-card" data-cuisine="chinese">
+        <div class="card">
+          <img src="images/menu/viwemenu/Char Siu Chicken Ingredients_ 4 boneless, skinless….jpg" class="card-img-top" alt="Restaurant 2">
+          <div class="card-body">
+            <h5 class="card-title">Chinese Center - Chinese</h5>
+            <p class="card-text">Specializing in authentic Chinese cuisine, perfect for any occasion.</p>
+            <a href="menu2.html" class="btn btn-primary">View Menu</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Restaurant 3 -->
+      <div class="col-md-4 mb-4 restaurant-card" data-cuisine="indian">
+        <div class="card">
+          <img src="images/menu/viwemenu/The full meal Come and see our new website at….jpg" class="card-img-top" alt="Restaurant 3">
+          <div class="card-body">
+            <h5 class="card-title">Hotel JAY - Indian</h5>
+            <p class="card-text">Delicious Indian dishes with a variety of spices and flavors.</p>
+            <a href="menu3.html" class="btn btn-primary">View Menu</a>
+          </div>
+        </div>
+      </div>
+      <!-- Restaurant 4 -->
+      <div class="col-md-4 mb-4 restaurant-card" data-cuisine="maharastian">
+        <div class="card">
+          <img src="images/menu/viwemenu/Char Siu Chicken.jpg" class="card-img-top" alt="Restaurant 4">
+          <div class="card-body">
+            <h5 class="card-title">Hotel Marathi - Maharastian</h5>
+            <p class="card-text">Maharashtrian food is known for its range of flavors, from mild to very spicy..</p>
+            <a href="menu4.html" class="btn btn-primary">View Menu</a>
+          </div>
+        </div>
+      </div>
+      <!-- Restaurant 5 -->
+      <div class="col-md-4 mb-4 restaurant-card" data-cuisine="Non Veg">
+        <div class="card">
+          <img src="images/menu/viwemenu/Char Siu Chicken Ingredients_ 4 boneless, skinless….jpg" class="card-img-top" alt="Restaurant 2">
+          <div class="card-body">
+            <h5 class="card-title">HOTEL PRIDE -Non Veg</h5>
+            <p class="card-text">Specializing in authentic Chinese cuisine, perfect for any occasion.</p>
+            <a href="menu5.html" class="btn btn-primary">View Menu</a>
+          </div>
+        </div>
+      </div>
+      <!-- Restaurant 6-->
+      <div class="col-md-4 mb-4 restaurant-card" data-cuisine="chinese" data-cuisine="Non Veg" data-cuisine="maharastian">
+        <div class="card">
+          <img src="images/menu/viwemenu/Réunionnais Coconut Chicken 📋 Ingredients_ 4….jpg" class="card-img-top" alt="Restaurant 2">
+          <div class="card-body">
+            <h5 class="card-title">HOTEL SANAM TERI KASAM</h5>
+            <p class="card-text">Specializing in authentic Chinese cuisine, perfect for any occasion.</p>
+            <a href="menu3.html" class="btn btn-primary">View Menu</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap and jQuery Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Filter Script -->
+  <script>
+    document.getElementById('filterCuisine').addEventListener('change', function() {
+      const filterValue = this.value;
+      const restaurants = document.querySelectorAll('.restaurant-card');
+      restaurants.forEach(restaurant => {
+        if (filterValue === 'all' || restaurant.dataset.cuisine === filterValue) {
+          restaurant.style.display = 'block';
+        } else {
+          restaurant.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
