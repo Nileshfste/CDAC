@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>ASSIGNMENT-04</h2>
+</body>
+<script>
+
+function forEachElement(array, callback) {
+    for (let i = 0; i < array.length; i++) {
+        callback(array[i]);
+    }
+}
+
+const array = [1, 2, 3, 4, 5];
+
+forEachElement(array, (element) => {
+    console.log(`${element * 2}`);
+});
+
+</script>
+</html>

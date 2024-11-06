@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1 - processData Callback Example</title>
+</head>
+<body>
+
+    <h2>Convert String to Uppercase Using Callback Function</h2>
+
+    <script>
+        // Step 1: Define the toUpperCase callback function
+        function toLowerCase(str) {
+            return str.toLowerCase();
+        }
+
+        // Step 2: Define the processData function
+        function processData(inputString, callback) {
+            // Call the callback function with the input string and log the result
+            const result = callback(inputString);
+            console.log(result);
+        }
+
+        // Step 3: Test the function by passing a string and the toUpperCase callback
+        processData("HELLO, WORLD!", toLowerCase); // Output: "HELLO, WORLD!"
+    </script>
+
+</body>
+</html>
