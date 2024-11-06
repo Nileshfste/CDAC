@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlight Bold Words</title>
+    <style> 
+    body{
+        background-color: black;
+    }    
+        #divi{
+            text-align: center;
+            margin-top: 15%;
+        }
+      #paragraph{
+          color :lightcyan;
+      }
+        .highlight {
+            background-color: rgb(90, 90, 9);
+        }
+        #hoverLink {
+            color: blue;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body> <div id="divi">
+    <p id="hoverLink">On mouse over here bold words of the following paragraph will be highlighted</p>
+
+    <p id="paragraph">
+        We have just started this section for the <b>users</b> (beginner to intermediate) who want to work with various <b>JavaScript</b> problems and write <b>scripts</b> online to test their JavaScript skill.
+    </p>
+
+</div>
+    <script>
+     
+        const hoverLink = document.getElementById("hoverLink");
+        const boldWords = document.querySelectorAll("#paragraph b");
+
+       
+        hoverLink.addEventListener("mouseenter", () => {
+            boldWords.forEach(word => word.classList.add("highlight"));
+        });
+
+        hoverLink.addEventListener("mouseleave", () => {
+            boldWords.forEach(word => word.classList.remove("highlight"));
+        });
+    </script>
+
+</body>
+</html>

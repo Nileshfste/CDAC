@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #input {
+            text-align: center;
+            padding: 50px;
+            background-color: yellow;
+            width:40%;
+             margin-top: 5%;
+          margin-left: 24%;
+          border:solid;
+          border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form id="input">
+        <h1>LOGIN</h1>
+        <input type="text" placeholder="First Name"><br><br>
+        <input type="text" placeholder="Last Name"><br><br>
+        <input type="number" placeholder="Contact"><br><br>
+        <input type="email" placeholder="Email ID"><br><br>
+        <button type="button" onclick="displayFormData()">Click Me</button>
+    </form>
+    
+    <script>
+        function displayFormData() {
+            const x = document.forms["input"];
+            let text = "<h1>DATA</h>+"<br>" ";
+            for (let i = 0; i < x.length; i++) {
+                if (x.elements[i].type !== "button") { 
+                    text +=  x.elements[i].value + "<br>";
+                }
+            }
+            document.getElementById("input").innerHTML = text;
+        }
+    </script>
+</body>
+</html>
+  
